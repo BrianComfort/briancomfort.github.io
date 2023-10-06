@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .flex {
+            display: flex;
+            place-content: center;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            text-align: left;
+            gap: 15px;
+            place-content: center;
+        }
+
+        .links {
+            display: grid;
+            place-content: center;
+            margin: auto;
+            text-align: justify;
+            gap: 10px;
+
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .expand:hover, .expand:active {
+            scale: 1.02;
+        }
+
+        .book {
+            display: grid;
+            text-align: center;
+            width: 120px;
+            place-content: center;
+        }
+
+        .book_image {
+            display: grid;
+            margin: auto;
+            width: 100px;
+
+            height: 150px;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="wrapper">
+            <h1>Brian's Book Collection</h1>
+            <span>Use Safari's reader setting for best experience.</span>
+
+            <div class="links">
+                <div class="expand">
+                    <a href="/books/the_alch.html">
+                        <div class="book">
+                            <img async src="img/alch_img.jpg" alt="Book Cover for The Alchemist" class="book_image">
+                            <span>The Alchemist</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="expand">
+                    <a href="/books/marigolds.html">
+                        <div class="book">
+                            <img async src="img/marigolds_img.jpg" alt="Book Cover for Marigolds" class="book_image">
+                            <span>Marigolds</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="expand">
+                    <a href="/books/cant.html">
+                        <div class="book">
+                            <img async src="img/cant_img.jpg" alt="Book Cover for Can't Hurt Me" class="book_image">
+                            <span>Can't Hurt Me</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="expand">
+                    <a href="/books/endure.html">
+                        <div class="book">
+                            <img src="img/endure_img.jpg" alt="Book Cover for Endure" class="book_image">
+                            <span>Endure</span>
+                        </div>
+
+                    </a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

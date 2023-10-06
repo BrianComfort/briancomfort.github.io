@@ -1,0 +1,137 @@
+:root {
+  --background-color: black;
+  --color: white;
+}
+
+::selection {
+  background-color: var(--color);
+  color: var(--color);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  user-select: text;
+}
+
+#hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100vw;
+}
+
+.wrapper {
+  display: grid;
+  width: 80%;
+
+  margin: auto;
+  place-items: center;
+  max-width: 500px;
+}
+
+#page {
+  width: 80%;
+  line-height: 1.3rem;
+}
+
+#buttons {
+  display: flex;
+  width: 100%;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  gap: 15px;
+}
+
+.page-buttons {
+  outline: none;
+  color: var(--color);
+
+  background-color: transparent;
+
+  width: 200px;
+  height: 50px;
+
+  border-style: solid;
+  border-color: var(--color);
+  border-radius: 50px;
+}
+
+.page-buttons:active {
+  background-color: var(--color);
+  color: var(--background-color);
+}
+
+#overhead {
+  display: flex;
+  place-content: center;
+  justify-content: space-between;
+  width: 80%;
+
+  color: grey;
+
+  position: absolute;
+  bottom: 0;
+}
+
+
+.show {
+  user-select: text;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 767px) {
+  /* Add your mobile-specific CSS styles here */
+
+  .flex {
+    width: 100%;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: grid;
+    width: 100%;
+
+    margin: auto;
+    place-content: center;
+  }
+
+  .page-buttons {
+    outline: none;
+    color: var(--color);
+
+    background-color: transparent;
+
+    width: 150px;
+    height: 50px;
+
+    border-style: solid;
+    border-color: var(--color);
+    border-radius: 50px;
+  }
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 768px) {
+  /* Add your desktop-specific CSS styles here */
+}
