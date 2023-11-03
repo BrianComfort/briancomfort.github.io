@@ -13,11 +13,11 @@ function formatTime(seconds, milliseconds) {
 function updateTimer() {
     timerElement.innerHTML = formatTime(timeLeft, milliseconds);
     if (timeLeft === 10 && milliseconds === 0) {
-        clickSound.play();
+        beepSound.play();
     }
     if (timeLeft === 5 && milliseconds === 0) {
-        clickSound.play();
-        setTimeout(() => clickSound.play(), 500);
+        beepSound.play();
+        setTimeout(() => beepSound.play(), 500);
     }
     if (timeLeft === 0 && milliseconds === 0) {
         clickSound.play();
