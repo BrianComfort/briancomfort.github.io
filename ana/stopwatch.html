@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="static/stopwatch/stopwatch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="wrapper">
+            <span id="quote">TO THE UNRELENTING VOICE IN MY HEAD THAT WILL NEVER ALLOW ME TO STOP</span>
+
+            <div id="timer">30.00</div>
+            <button id="startButton">BEGIN TIME</button>
+            <audio id="beep">
+                <source src="static/stopwatch/beep.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="click">
+                <source src="static/stopwatch/click.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+
+    <script src="static/stopwatch/stopwatch.js"></script>
+</body>
+
+</html>

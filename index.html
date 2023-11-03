@@ -41,6 +41,7 @@
             text-align: left;
             gap: 15px;
             place-content: center;
+            max-width: 300px;
         }
 
         .links {
@@ -53,7 +54,8 @@
             grid-template-columns: 1fr 1fr;
         }
 
-        .expand:hover, .expand:active {
+        .expand:hover,
+        .expand:active {
             scale: 1.02;
         }
 
@@ -72,54 +74,85 @@
             height: 150px;
             object-fit: scale-down;
         }
+
+        @media screen and (min-width: 1024px) {
+            .flex-lazy {
+                display: flex;
+                gap: 100px;
+            }
+
+            #el1 {
+                display: grid;
+                gap: 10px;
+                height: fit-content;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="flex">
         <div class="wrapper">
-            <h1><a href="briancomfort.github.io">briancomfort.github.io</a></h1>
-            <div class="links">
-                <div class="expand">
-                    <a href="/books/the_alch.html">
-                        <div class="book">
-                            <img async src="img/alch_img.jpg" alt="Book Cover for The Alchemist" class="book_image">
-                            <span>The Alchemist</span>
-                        </div>
-                    </a>
+            <div class="flex-lazy">
+                <div id="el1" class="split">
+                    <h1><a href="briancomfort.github.io">briancomfort.github.io</a></h1>
+                    <span>A website for personal note taking on the books I read. Click the desired link below to view
+                        my notes, highlights and essays. </span>
+                    <span>For best viewing, use a desktop computer</span>
+                    <a href="/ana/view.html">View Quotes and Notes</a>
+                    <a href="/ana/stopwatch.html">View Workout Timer and Stopwatch</a>
                 </div>
-                <div class="expand">
-                    <a href="/books/marigolds.html">
-                        <div class="book">
-                            <img async src="img/marigolds_img.jpg" alt="Book Cover for Marigolds" class="book_image">
-                            <span>Marigolds</span>
+                <div id="el2">
+                    <h2>Library</h2>
+                    <div class="links">
+                        <div class="expand">
+                            <a href="/books/the_alch.html">
+                                <div class="book">
+                                    <img async src="img/alch_img.jpg" alt="Book Cover for The Alchemist"
+                                        class="book_image">
+                                    <span>The Alchemist</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-
-                <div class="expand">
-                    <a href="/books/cant.html">
-                        <div class="book">
-                            <img async src="img/cant_img.jpg" alt="Book Cover for Can't Hurt Me" class="book_image">
-                            <span>Can't Hurt Me</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="expand">
-                    <a href="/books/endure.html">
-                        <div class="book">
-                            <img src="img/endure_img.jpg" alt="Book Cover for Endure" class="book_image">
-                            <span>Endure</span>
+                        <div class="expand">
+                            <a href="/books/marigolds.html">
+                                <div class="book">
+                                    <img async src="img/marigolds_img.jpg" alt="Book Cover for Marigolds"
+                                        class="book_image">
+                                    <span>Marigolds</span>
+                                </div>
+                            </a>
                         </div>
 
-                    </a>
-                </div>
-                
+                        <div class="expand">
+                            <a href="/books/cant.html">
+                                <div class="book">
+                                    <img async src="img/cant_img.jpg" alt="Book Cover for Can't Hurt Me"
+                                        class="book_image">
+                                    <span>Can't Hurt Me</span>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="expand">
+                            <a href="/books/endure.html">
+                                <div class="book">
+                                    <img src="img/endure_img.jpg" alt="Book Cover for Endure" class="book_image">
+                                    <span>Endure</span>
+                                </div>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
+
+
         </div>
     </div>
 
 </body>
+
 </html>
