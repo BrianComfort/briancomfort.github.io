@@ -17,7 +17,7 @@ function updateTimer() {
     }
     if (timeLeft === 5 && milliseconds === 0) {
         clickSound.play();
-        setTimeout(() => beepSound.play(), 500);
+        setTimeout(() => clickSound.play(), 500);
     }
     if (timeLeft === 0 && milliseconds === 0) {
         clickSound.play();
