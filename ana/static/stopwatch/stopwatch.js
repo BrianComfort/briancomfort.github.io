@@ -13,13 +13,13 @@ function formatTime(seconds, milliseconds) {
 function updateTimer() {
     timerElement.innerHTML = formatTime(timeLeft, milliseconds);
     if (timeLeft === 10 && milliseconds === 0) {
-        beepSound.play();
+        clickSound.play();
     }
     if (timeLeft === 5 && milliseconds === 0) {
-        beepSound.play()
+        beepSound.play();
     }
     if (timeLeft === 0 && milliseconds === 0) {
-        clickSound.play()
+        clickSound.play();
         clearInterval(timerInterval);
         startButton.textContent = "START";
     }
