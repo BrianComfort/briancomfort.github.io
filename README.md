@@ -1,5 +1,5 @@
-# brians-books
+# BrianComfort.GitHub.IO
 
-A simple collection of eBooks I downloaded. 
+A collection of eBooks with a quote database.
 
-Pubished on GitHub Pages for easy acess. 
+Pubished on GitHub Pages for easy access. 
